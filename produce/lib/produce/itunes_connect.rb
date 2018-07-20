@@ -20,6 +20,7 @@ module Produce
       if application
         UI.success("[iTC] App '#{Produce.config[:app_identifier]}' already exists (#{application.apple_id}), nothing to do on App Store Connect")
         # Nothing to do here
+        application.apple_id
       else
         UI.success("Creating new app '#{Produce.config[:app_name]}' on App Store Connect")
 
